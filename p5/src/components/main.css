@@ -1,0 +1,40 @@
+.page{
+    background: #282d35;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url('./public/react-icon-large.png');
+    background-repeat: no-repeat;
+    background-position: right 75%;
+    /* do the positioning in the same line */
+    /* background-position-y: 75%; */
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+    color: #fff;
+}
+
+.mainContainer h1{
+    font-size: 39px;
+    letter-spacing: -0.05em;
+}
+
+.listContainer{
+    margin-top: 46px;
+    max-width: 60%;
+}
+
+.listContainer li{
+    line-height: 19px;
+    padding-block: 10px;
+}
+
+.listContainer li::marker{
+    color: #61DAFB;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,68 @@
+.container{
+    width: 300px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    overflow: hidden;
+    position: relative; 
+}
+
+.imageCard{
+    width: 100%;
+    display: block;
+}
+
+.btnCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    padding: 0 10px;
+    color: #222222;
+    background: #fff;
+    outline: none;
+    border: 1px solid rgb(35, 34, 34);
+    box-shadow: 0px 0px 4px #ddd;
+    border-radius: 5px;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.infoContainer{
+    width: 100%;
+}
+
+.ratingContainer i{
+    color: red;
+    font-size: 1.2rem;
+}
+
+.ratingContainer span{
+    padding: 1rem;
+    color: #918E9B;
+}
+
+
+.desc{
+    width: 100%;
+}
+
+.desc span{
+    font-weight: bold;
+}
+
+
+.card--badge {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    background-color: #fff;
+    padding: 5px 7px;
+    border-radius: 2px;
+    font-weight: bold;
+}

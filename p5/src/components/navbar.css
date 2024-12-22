@@ -1,0 +1,36 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #1c1d1e;
+}
+
+.contentLeft{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    margin-left: 1rem;
+}
+
+.contentLeft h4{
+    margin-left: 0.5rem;
+    color:#61DAFB ;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.imageLogo{
+    width: 30px;
+    padding: 0.21rem;
+}
+
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 0.5rem;
+    color: #fff;
+    margin-right: 1rem;
+}

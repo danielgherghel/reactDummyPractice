@@ -1,0 +1,77 @@
+.container {
+    width: 100%;           
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    
+}
+
+.cardStructure{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.cardImage{
+    width: 400px !important;
+    height: 400px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.cardInfo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 4rem 2rem;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
+.header i{
+    color: red;
+    font-size: 20px;
+}
+
+.header span{
+    text-transform: uppercase;
+}
+
+.header a{
+    color: gray;
+    text-decoration: underline;
+    line-height: 1.5;
+}
+
+.bulkCard{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.cardTitle{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.timeline{
+    font-weight: 600;
+}
+
+.desc{
+    margin: 2rem auto;
+}

@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: #FAFAF8;
+}
+
+
+.chefHeader{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+  height: 80px;
+  overflow: hidden;
+  background-color: #fff;
+
+  h1{
+    font-size: 2rem;
+    font-weight: 400;
+  }
+
+}
+
+.chefImage{
+  width: 90px;
+  height: 90px;
+  color: #fff;
+}
+
+
+.mainContainer{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  height: 6rem;
+  flex-wrap: wrap;
+  padding: 2rem;
+  height: 200px;
+}
+
+.formBody{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+}
+
+.formBody > input{
+  height: 2rem;
+  outline: none;
+  border: 1px solid #D1D5DB;
+  border-radius: 5px;
+  max-width: 400px;
+  min-width: 150px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+  flex-grow: 1;
+}
+
+.formBody > button{
+  font-family: Inter, sans-serif;
+  height: 2rem;
+  outline: none;
+  background-color: #141413;
+  color: #FAFAF8;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 200px;
+  min-width: 150px;
+  font-weight: 500;
+}
+
+.formBody > button::before{
+  content: '+ ';
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+}

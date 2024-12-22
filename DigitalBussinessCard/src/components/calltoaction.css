@@ -1,0 +1,56 @@
+.callContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+.btnLeft{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #333;
+    outline: none;
+    overflow: hidden;
+    cursor: pointer;
+    border: none;
+    height: 30px;
+}
+
+.btnLeft:hover{
+    scale: 0.9;
+}
+
+.btnRight{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    color: #fff;
+    background: rgb(35, 35, 126);
+    outline: none;
+    cursor: pointer;
+    border: none;
+    height: 30px;
+}
+
+.btnRight:hover{
+    scale: 0.9;
+}
+
+.icon{
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    font-size: 15px;
+}

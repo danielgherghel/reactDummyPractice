@@ -1,0 +1,26 @@
+.aboutContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.aboutContainer h4{
+    color: #fff;
+    padding: 5px;
+    font-size: 16px;
+}
+
+.aboutSection p{
+    font-size: 12px;
+    color: #f2e9e9;
+}
+
+
+
+.interestSection p{
+    font-size: 12px;
+    color: #f2e9e9;
+}

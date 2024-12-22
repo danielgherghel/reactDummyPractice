@@ -1,0 +1,17 @@
+.navContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    background: rgb(220, 82, 82);
+
+    i{
+        color: #fff;
+        margin: 0 1rem;
+        font-size: 1.5rem;
+    }
+
+    p{
+        color: #fff
+    }
+}

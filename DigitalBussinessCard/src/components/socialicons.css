@@ -1,0 +1,32 @@
+.socialContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 50px;
+    width: 100%;
+}
+
+.socialIcons{
+    background-color: rgb(13, 10, 37);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    padding: 30px;
+    gap: 1rem;
+    color: aliceblue;
+}
+
+.socialIcons i{
+    font-size: 1rem;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+
+.socialIcons i:hover{
+    color: #10718fac;
+    transform: scale(1.2);
+    cursor: pointer;
+}
