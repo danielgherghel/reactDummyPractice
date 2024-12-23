@@ -51,7 +51,7 @@ function App() {
           <h2 className='name'>
             {contact.firstName} {contact.lastName}
           </h2>
-          <p className="contact">{contact.phone}</p>
+          <p className="contact">{contact.phone} </p>
           <p className="contact">{contact.email}</p>
         </div>
       
