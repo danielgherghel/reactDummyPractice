@@ -3,7 +3,6 @@ import { useState } from 'react'
 import avatar from './images/user.jpg'
 import starFilled from './images/filled-star.jpg'
 import starEmpty from './images/star.png'
-import { preconnect } from 'react-dom'
 
 
 
