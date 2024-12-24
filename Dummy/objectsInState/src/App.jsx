@@ -3,13 +3,11 @@ import { useState } from 'react'
 import avatar from './images/user.jpg'
 import starFilled from './images/filled-star.jpg'
 import starEmpty from './images/star.png'
+import { preconnect } from 'react-dom'
 
 
 
 function App() {
-
-  
-  const [toggleBtn, setToggleBtn] = useState(false)
 
   const [ contact, setContact] = useState({
     firstName: 'Jon',
@@ -19,14 +17,12 @@ function App() {
     isFavorite: false
   })
 
-
   function toggleFavorite(){
-    setContact((item) => ({
-      ...item,
-      isFavorite: !item.isFavorite
+    setContact(prevContact => ({
+      ...prevContact,
+      isFavorite: !prevContact.isFavorite
     }))
   }
-
 
   return (
     <main>
@@ -44,8 +40,10 @@ function App() {
           >
             <img
               src={contact.isFavorite ? starFilled : starEmpty}
-              alt='star empty'
+              alt={contact.isFavorite ? 'empty like' : 'like'}
               className='favorite'
+              aria-label={contact.isFavorite ? 'Add to favorites' : 'Remove from favorites'}
+              aria-pressed={contact.isFavorite}
             ></img>
           </button>
           <h2 className='name'>

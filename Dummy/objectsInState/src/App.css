@@ -21,6 +21,7 @@ main {
   border: 1px solid lightgray;
   border-radius: 10px;
   height: 350px;
+  margin: auto 1rem;
 }
 
 .card .avatar {
