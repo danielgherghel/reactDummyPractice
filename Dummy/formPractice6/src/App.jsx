@@ -4,20 +4,15 @@ import './App.css';
 function App() {
 	function submitForm(event) {
 		event.preventDefault();
-		const emailForm = new FormData(event.target);
-		const email = emailForm.get('formEmail');
-		const password = emailForm.get('password');
-		const radio = emailForm.get('employmentStatus');
-		const checkbox = emailForm.getAll('nutritionVal');
-		const dropdown = emailForm.get('progLang');
-		console.log('The email is ', email);
-		console.log('Psw: ', password);
-		console.log('The radio is: ', radio);
-		console.log('The nutritional values are: ', checkbox);
-		console.log(
-			'The favorite programming language is: ',
-			dropdown
-		);
+		const formData = new FormData(event.target);
+		const data = Object.fromEntries(formData);
+		const nutritionInfo = formData.getAll('nutritionVal');
+		// console.log('Form Data: ', data);
+		const allData = {
+			...data,
+			nutritionInfo,
+		};
+		console.log(allData);
 	}
 
 	return (
@@ -119,7 +114,7 @@ function App() {
 							<select
 								id="favColor"
 								name="progLang"
-								defaultValue=""
+								defaultValue="react"
 								required
 							>
 								<option value="" disabled>
