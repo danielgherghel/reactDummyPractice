@@ -5,7 +5,10 @@ function App() {
 		e.preventDefault();
 		const newData = new FormData(e.target);
 		const emailData = newData.get('emailInput');
-		console.log(emailData);
+		const pswData = newData.get('passwordInput');
+
+		console.log('Email: ', emailData);
+		console.log('Paswod:', pswData);
 	}
 
 	return (

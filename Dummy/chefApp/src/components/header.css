@@ -1,0 +1,22 @@
+.chefHeader {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1px;
+	box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1),
+		0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+	height: 80px;
+	overflow: hidden;
+	background-color: #fff;
+
+	h1 {
+		font-size: 2rem;
+		font-weight: 400;
+	}
+}
+
+.chefLogo {
+	width: 100px;
+	height: 100px;
+	color: #fff;
+}
