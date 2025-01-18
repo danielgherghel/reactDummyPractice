@@ -130,13 +130,21 @@ function App() {
             id='formInput'
             name='formInput'
           ></input>
-          <button>Add</button>
+          <button>Add now</button>
         </form>
       </section>
 
     <div>
       {formElementsShow}
     </div>
+    </div>
+
+    <div className='sound-wave'>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
     </div>
 
     </>
