@@ -5,7 +5,7 @@ function App() {
 	const [showNotifications, setShowNotifications] =
 		useState(['a', 'b', 'c', 'd']);
 
-	function updateNotifications(item) {
+	function updateNotifications() {
 		if (showNotifications.length === 0) {
 			return "You're up to date";
 		} else if (showNotifications.length === 1) {
