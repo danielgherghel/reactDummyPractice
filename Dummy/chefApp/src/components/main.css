@@ -2,10 +2,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: 6rem;
 	flex-wrap: wrap;
 	padding: 2rem;
-	height: 200px;
+	min-height: 200px;
+	max-width: 1000px;
+	margin: 0 auto;
+	width: 100%;
 }
 
 .formBody {
@@ -13,8 +15,8 @@
 	align-items: center;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 1rem;
-	width: 100%;
+	gap: 3rem;
+	max-width: 100%;
 }
 
 .formBody > button {

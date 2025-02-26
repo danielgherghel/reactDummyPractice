@@ -16,7 +16,7 @@ export default function Main() {
 		setIngredient((prev) => [...prev, getFormEl]);
 	}
 
-	function updateRecipe() {
+	function toggleRecipeShown() {
 		setRecipeShown((prev) => !prev);
 	}
 
@@ -46,7 +46,7 @@ export default function Main() {
 										Generate a recipe from yout list of
 										ingredients.
 									</p>
-									<button onClick={updateRecipe}>
+									<button onClick={toggleRecipeShown}>
 										Get a recipe
 									</button>
 								</div>

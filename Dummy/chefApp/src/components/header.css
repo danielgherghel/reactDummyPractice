@@ -8,6 +8,8 @@
 	height: 80px;
 	overflow: hidden;
 	background-color: #fff;
+	width: 100vw;
+	max-width: none;
 
 	h1 {
 		font-size: 2rem;
