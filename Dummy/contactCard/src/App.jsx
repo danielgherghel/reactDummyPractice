@@ -1,7 +1,5 @@
 import { useState } from 'react';
 import avatar from './images/user.jpg';
-import starFilled from './images/filled-star.jpg';
-import starEmpty from './images/star.png';
 import Star from './components/Star';
 
 import './App.css';
@@ -15,12 +13,23 @@ function App() {
 		isFavorite: false,
 	});
 
+	function updateFav() {
+		setContact((prevContact) => ({
+			...prevContact,
+			isFavorite: !prevContact.isFavorite,
+		}));
+	}
+
 	return (
 		<>
 			<main>
 				<article className="card">
 					<img src={avatar} className="avatar"></img>
-					<Star isFilled={contact.isFavorite} />
+
+					<Star
+						isFilled={contact.isFavorite}
+						handleClick={updateFav}
+					/>
 
 					<div className="info">
 						<h2 className="name">
