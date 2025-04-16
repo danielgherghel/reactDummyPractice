@@ -14,6 +14,7 @@
 	h1 {
 		font-size: 2rem;
 		font-weight: 400;
+		transition: font-size 0.4s ease;
 	}
 }
 
@@ -21,4 +22,18 @@
 	width: 100px;
 	height: 100px;
 	color: #fff;
+	transition: width 0.4s ease, height 0.4s ease,
+		color 0.4s ease, transofrm 0.4s ease;
+}
+
+@media (max-width: 500px) {
+	.chefLogo {
+		width: 60px;
+		height: 60px;
+		transform: scale(0.8);
+	}
+
+	.chefHeader h1 {
+		font-size: 1.5rem;
+	}
 }

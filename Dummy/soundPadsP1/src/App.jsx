@@ -1,26 +1,36 @@
 import './App.css';
 import { useState } from 'react';
 import pads from './pads';
+import Pad from './components/Pad';
 
 function App({ darkMode }) {
 	const [newPads, setNewPads] = useState(pads);
 
-	const styles = {
-		backgroundColor: darkMode ? '#222222' : '#cccccc',
-	};
+	const padsEl = newPads.map((item) => {
+		return (
+			<Pad
+				key={item.id}
+				color={item.color}
+				classToggle={item.on}
+				toggle={toggle}
+				id={item.id}
+			/>
+		);
+	});
 
-	const newStiles = (item) => {
-		return {
-			backgroundColor: item % 2 === 0 ? 'blue' : 'black',
-		};
-	};
-
-	const padsEl = newPads.map((item) => (
-		<button
-			key={item.id}
-			style={newStiles(item.id)}
-		></button>
-	));
+	function toggle(id) {
+		console.log(id);
+		// map over the pads array and if the current item
+		// and if the same id as the one passed to this function,
+		// then flip its 'on' value
+		setNewPads((prevPads) =>
+			prevPads.map((item) => {
+				return id === item.id
+					? { ...item, on: !item.on }
+					: item;
+			})
+		);
+	}
 
 	return (
 		<main>

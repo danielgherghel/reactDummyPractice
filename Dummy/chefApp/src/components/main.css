@@ -57,12 +57,23 @@ ul.ingredients-list > li {
 
 .get-recipe-container {
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	align-items: center;
 	border-radius: 8px;
 	background: #f0efeb;
 	padding: 10px 50px;
 	width: 600px;
+	padding: 1rem;
+	width: 100%;
+}
+
+.recipeList {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 600px;
+	gap: 1rem;
 }
 
 .get-recipe-container h3 {
@@ -87,9 +98,22 @@ ul.ingredients-list > li {
 	font-family: Inter, sans-serif;
 	font-size: 0.875rem;
 	cursor: pointer;
+	transition: all 0.3s ease;
 }
-/* 
-.recipeList {
-	border: 2px solid red;
-	width: 600px;
-} */
+
+.get-recipe-container button:hover {
+	background-color: #86a285;
+	color: #fafaf8;
+	transform: scale(1.1);
+	font-weight: 600;
+}
+
+@media (max-width: 600px) {
+	.recipeList {
+		width: 400px;
+		height: 0.9;
+	}
+	/* .get-recipe-container h3 {
+		font-size: 1rem;
+	} */
+}

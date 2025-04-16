@@ -65,3 +65,7 @@ button {
 	border-radius: 5px;
 	cursor: pointer;
 }
+
+button.on {
+	opacity: 1;
+}

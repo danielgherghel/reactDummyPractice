@@ -1,7 +1,7 @@
 export default [
 	{
 		id: 1,
-		color: '#F18D8B',
+		color: '#F18D8A',
 		on: true,
 	},
 	{
